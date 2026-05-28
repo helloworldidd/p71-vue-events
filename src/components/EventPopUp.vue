@@ -10,7 +10,7 @@ const estadoPopUp = ref(false);
 <template>
     <h3>pop up</h3>
 
-    <button @click="estadoPopUp = true" class="btn btn--abrir">click</button>
+    <button @click="estadoPopUp = true" class="btn btn--abrir">abrir pop up</button>
 
     <div v-if="estadoPopUp" class="contenedor-popup">
         <div  class="popup">
@@ -26,6 +26,12 @@ const estadoPopUp = ref(false);
 
 <style scoped>
 
+h3{
+    text-align: center;
+    margin: 40px;
+    font-size: 30px;
+    text-transform: capitalize;
+}
 
 .contenedor-popup{
     position: fixed;
